@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special cases</title>
+</head>
+<body>
+    <p id="pName">result of if-statement</p>
+    <p id="pName2">result of switch-statement</p>
+
+    <script>
+        var name = "Godfrey";
+        var pName = document.getElementById("pName");
+        var pName2 = document.getElementById("pName2");
+
+        if(name == "Boris") {
+            pName.innerText = "Boris is de beste."
+        } else if(name == 'Maria') {
+            pName.innerText = "Maria is de beste."
+        } else {
+            pName.innerText = "Jij bent de beste."
+        }
+        
+        switch(name) {                  //alternatief voor else if
+            case "Boris":
+                pName2.innerText = "Boris is zelfs de allerbeste.";
+                break;
+            case "Maria":
+                pName2.innerText = "Maria is zelfs de allerbeste.";
+                break;
+            default:
+                pName2.innerText = "Jij bent de allerbeste.";
+                break;
+        }
+
+
+    </script>
+
+</body>
+</html>

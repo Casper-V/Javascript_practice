@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string_manipulation</title>
+</head>
+<body>
+    <h1 id="sentence">
+        Zomaar een zinnetje met willekeurige woorden.
+    </h1>
+    <script>
+        var sentenceNode = document.getElementById("sentence");
+        var sentence = sentenceNode.innerText;
+        var upperSentence = sentence.toUpperCase();
+        var lowerSentence = sentence.toLowerCase();
+        var partialSentence = sentence.substr(10,10);
+        var allWordsArray = sentence.split(" ");
+        var allWordsInSqBrackets = allWordsArray.join("/");
+        var firstThreeWords = allWordsArray.slice(0,3);
+        var threeWordSentence = firstThreeWords.join(" ");
+        
+        sentenceNode.innerText = threeWordSentence;
+    </script>
+</body>
+</html>

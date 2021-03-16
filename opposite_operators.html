@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>opposite_operators</title>
+</head>
+<body>
+    <h1 id="welcome">work/rest</h1>
+    
+    <script>
+        // greeting depends on whether it's a work day or not
+       var input = prompt("Which day is it today?");
+       var inputLower = input.toLowerCase();
+
+       var welcomeText = document.getElementById("welcome");
+
+       if(inputLower == "saturday" || inputLower == "sunday") {
+            welcomeText.innerHTML = "<strong>Enjoy your rest today!</strong>";
+       } else {
+            welcomeText.innerHTML = "<strong>Enjoy your work today!</strong>";
+       }
+    </script>
+</body>
+</html>

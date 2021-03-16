@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gebruikersinvoer</title>
+</head>
+<body>
+    <h1>Je hebt het volgende ingevoerd:</h1>
+    <h3 id="invoer">-------------</h3>
+
+    <script>
+        var naam = prompt("Hoe heet je?", "Je naam"); // Je naam is de standaardinvoer
+        var h3Node = document.getElementById("invoer");
+        h3Node.innerText = naam.toLowerCase();
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Project 2</title>
+</head>
+<body>
+    
+    <h1 id="containsLink">Contains link</h1>        <!--Hier komt de tekst met de ingevoerde URL.-->
+
+    <script>
+       var URL = prompt("Enter your URL.");         // URL vragen
+       var first8 = URL.slice(0,8);                 // checken of deze met https:// begint
+       var first7 = URL.slice(0,7);                 // checken of deze met http:// begint
+       var https = "https://";                      
+       var containsLink = document.getElementById("containsLink");  //De tekst van H1 koppelen aan een variabele.
+       
+       if(first8 != "https://" && first7 != "http://") {  //als de gebruiker niet zelf al http of https:// heeft getypt
+           URL = https + URL;       //voeg dan https:// toe
+       }
+       
+       link = "<a href='" + URL + "' target='_blank'>here</a>";  //link samenstellen, opent op nieuw tabblad
+
+       containsLink.innerHTML = "Click " + link + " to go to the URL you entered."; //uiteindelijke bericht
+    </script>
+</body>
+</html>

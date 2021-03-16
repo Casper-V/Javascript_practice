@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comparison_operators</title>
+</head>
+<body>
+    <h1 id="welcome">welkom</h1>
+    <script>
+        // only Boris can access the site
+        var name = prompt("Voer je naam in.");
+        var welcomeNode = document.getElementById("welcome")
+
+        if(name.toLowerCase() == "boris") {
+            welcomeNode.innerText = "Welkom op de website, Boris!";
+        } else {
+            welcomeNode.innerText = "Je hebt geen toegang tot deze website, " + name + ".";
+        }
+
+    </script>
+</body>
+</html>
